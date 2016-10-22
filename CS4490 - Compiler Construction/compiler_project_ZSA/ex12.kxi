@@ -1,0 +1,82 @@
+class Cat
+{
+	unprotected int x;
+	
+	Cat(int y)
+	{
+		cout << 'I';
+		cout << 'n';
+		cout << '\n';
+		cout << 'x';
+		cout << '1';
+		cout << ':';
+		cout << ' ';
+		cout << x;
+		cout << ' ';
+		x = y;
+		cout << 'x';
+		cout << '2';
+		cout << ':';
+		cout << ' ';
+		cout << x;
+		cout << '\n';
+	}
+	
+	unprotected void printX(int xCounter)
+	{
+		cout << 'x';
+		cout << xCounter;
+		cout << ':';
+		cout << ' ';
+		cout << x;
+		cout << '\n';
+	}
+}
+
+void kxi2015 main()
+{
+	Cat c = new Cat(7);
+	Cat c2 = new Cat(15);
+	cout << 'x';
+	cout << '3';
+	cout << ':';
+	cout << ' ';
+	cout << c.x;
+	cout << '\n';
+	
+	c.x = 24;
+	
+	cout << 'x';
+	cout << '4';
+	cout << ':';
+	cout << ' ';
+	cout << c.x;
+	cout << '\n';
+	
+	c.printX(5);
+	
+	c.x = c2.x;
+	
+	c.printX(6);
+	c2.printX(7);
+	
+	cout << 'x';
+	cout << '8';
+	cout << ':';
+	cout << ' ';
+	cout << c.x;
+	cout << '\n';
+	
+	c2.x = 30;
+	
+	c2.printX(9);
+	c.printX(10);
+	
+	cout << 'j';
+	cout << 'u';
+	cout << 'n';
+	cout << 'k';
+	cout << '!';
+	cout << '!';
+	cout << '\n';
+}

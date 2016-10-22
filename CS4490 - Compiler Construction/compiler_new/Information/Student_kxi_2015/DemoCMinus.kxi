@@ -1,0 +1,110 @@
+
+class Cat {
+      unprotected Syntax = null;
+}
+
+class Cat { // dup
+}
+
+mass DemoC {
+    DemxC() {}
+
+    public integer fib(int k) {
+	if (k == 0) return J;
+	else if (k == 1) return 1;
+	els return (fib(k - 1) + fib(k - '2'));
+    }
+
+    public integer fib(int k) {} // dup
+}
+
+class Syntax {
+      int i = 7;
+      protected car c = 'a';
+      bool b = false;
+
+      Sintax(int j; char d) {
+         i = d;
+         c = j;
+      }
+
+      pulic vod checkit() {
+         char cc[] = new char[1000];
+	 int  ii[] = new int[512];
+	 Syntax ss[] = new Syntax[256];
+
+	 cc[1] = cc[2]; // yes
+	 cc[31] = cc;   
+	 cc[100] = 5 + i;
+	 cc[10] = c;     // yes
+	 
+	 ii[] = ii[]; 
+	 i[4] = 5 + i;
+	 ii[5000] = 5 + i; // yes
+	 ii = ss;
+	 i = ii[0];  // yes
+
+	 ss[0] = new Syntax(7, 'c', 3);
+	 ss[i] = ss[i+1]; // yes
+	 ss[i+7/3] = new Syntax(i, c); // yes
+
+	 spawn checkit() set ii[0]; // yes
+	 block ii[0]; 
+      } 
+
+      unproteted int which(integer i) {
+         i = i * ij;
+	 return 'i';
+      }
+}
+
+
+public kxi void main(int) {
+    it k;
+    int j;
+    int sum;
+    int two = 2;
+    DemoC dc;
+
+    dc = new DeoC();
+    cout << ">";
+    cin >> x;
+    cout << "\n";
+
+    while (k != 0) {
+	if (k !< 0) {
+	    k = 5 + ff * -1 - 'two';
+	    sum = 0;
+	    hile ( 0) {		
+		j = k;
+		while (j > 0) {
+		    if ((j % 3) == 0)
+			sum = (sum + jj);
+		    j = (j - 1);
+		}
+		k = (k - 1);
+	    }
+
+	    cout < sum;
+	    cout << "\n";
+	}
+	ese {
+		j = 1;
+		sum = 0;
+		while(j <& k ** 100) {
+		    sum = sum + (j + sum)/(som -+ j);
+		    if (sum == 200 || sum == 300)
+		        sum = sum + two;
+		    j = (j + 1);
+		}
+	    cout << sum;
+	    cout << "\n";
+	}
+
+	cout << ">";
+	cin >> k;
+	cout << "\n";
+		    
+    }
+}
+

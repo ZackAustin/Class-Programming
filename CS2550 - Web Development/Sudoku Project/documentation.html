@@ -1,0 +1,40 @@
+<!-- Author: 	Zack Austin
+	 Project:	Final Project - Sudoku Game
+	 Date:		12/12-->
+	 
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Sudoku Documentation</title>
+	<link rel="stylesheet" href="description.css">
+</head>
+
+<body>
+
+	<p>Zack Austin<br>CS2550<br>12/12/14<br></p>
+
+	<h1>Sudoku - Documentation</h1>
+
+	<h2>Design:</h2>
+	<p>This project I used the concepts for the Model-View-Controller and Module Patterns. There is an overarching namespace called sudoku, with three nested namepspaces inside sudoku for each section of the MVC pattern. Implementing the Module Pattern I focused heavily on the use of functional prototyping to add to the different namespaces, allowing me to spread my implementation across several JS files. The data model consists of a 2-dimensional array that consists of a number type that tracks the type of number and value it has. An example of a solved puzzle is shown on the game description page.</p>
+
+	<h2>Overview:</h2>
+	<p>The program starts off calling the function "sudoku.sController.setDefaultPuzzleSelection()" which initializes the default puzzle: 'Easy Puzzle 1' and calls the showSudokuBoard() in the same namespace. ShowSudokuBoard() controls most of the magic and calls the functions necessary from both the sudokuModel and sudokuView files. The game grid is created by the "sudoku.sView.genSudokuBoard()" function. The model data is next initialized, followed by setting up the CSS for the grid's view and event handling. Finally, the timer and local storage for saving and loading games are set up in their respective files. Selecting a New File or Loading a Saved Game will again reiterate through the showSudokuBoard process either reading the XML file or local storage that is available.</p>
+
+	<h2>Input and View:</h2>
+	<p>  User input is achieved through buttons, mouse click handles, text change in textfields, and changes to options on selections. This functionality is setup through the 'sudoku.Controller.js' file as well as 'sudokuSaving.js'. InnerHTML, createElement, getElementsByTagName, getElementByID, and HTML 5's classlist are used extensively throughout the controller. Event handling functions used were onclick handlers for user-inputted cells, onkeyup for entering numbers into those cells, and onchange events for selection inputs.</p>
+
+	<h2>AJAX, XML, and JSON:</h2>
+	<p>XMLHttpRequest was used with XML data files that I had auto-genereated inside the "Puzzle Files" folder. These are used after choosing the Difficulty and Puzzle Number for a new puzzle and clicking the 'New Puzzle' button. The file is then sent to the showSudokuBoard() function which calls the generateModel() function from the 'sudokuModel.js' file. JSON data is also loaded through using HTML 5's local storage to both Save and Load Games.</p>
+
+	<h2>HTML 5 Element- Local Storage:</h2>
+	<p>Local Storage is incorporated into the project with the Save / Load game functionality on the left sidebar. Simply hit the save game button and a key with the value of the puzzles name will be inserted with both the 2-dimensional model array and timer object. An example key would be 'Easy Puzzle 1'. The save functionality only allows 1 save file per puzzle type for simplicity. The most current save will overwrite any previous save for that specific puzzle. Loading a puzzle will again call the 'showSudokuBoard()' and use JSON.stringify on the object. Loading or choosing a new file will auto-save the progress of the previous game if it's been saved at least once.</p>
+
+	<h2>Game Logic:</h2>
+	<p>The game logic for the project is found in the 'gameLogic.js' and 'puzzleTimer.js' files. The majority of the game logic corresponds with the 'Check Solution' button, testing the rows, columns, and blocks for possible duplicate numbers. Duplicate numbers that are marked and user-inputted are tracked so the controller can update the view's classlist for individual cells. Blocks are tested by creating JSON objects testing ranges that are subsets of the grid. Another JSON object is used to track valuable information pertaining to what row and column of the model are incorrect, how many cells are incorrect, and how many more cells are left to be inputted. Finally, a timer object is used with the setInterval and clearInterval functions to track the elapsed time on a certain puzzle.</p>
+	<br><br><br>
+</body>
+
+</html>

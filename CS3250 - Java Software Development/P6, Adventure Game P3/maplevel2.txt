@@ -1,0 +1,18 @@
+7 8
+M~ff....
+~~ff...M
+M*.....M
+f~~.M..M
+f~~..MMM
+~~...fMM
+~~.ffffM
+60 60
+map2items.txt
+.;plains;plain.png;
+M;mountain;mountain.png;
+f;forest;forest.png;
+~;water;water.png;
+*;goal;treasure.png;
+-;out;out.png;
+1;person;person.png;
+

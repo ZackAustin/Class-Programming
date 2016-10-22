@@ -1,0 +1,77 @@
+<!-- Author: 	Zack Austin
+	 Project:	Assignment 4 - Clickable Game Grid
+	 Date:		10/19-->
+	 
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Sudoku Game Description</title>
+	<link rel="stylesheet" href="description.css">
+</head>
+
+<body>
+
+<h1>Sudoku - Game Description</h1>
+
+<p> <img src="SudokuExample.png"></p>
+
+<div id="imgcontent">
+	<ul>
+		<li>Sudoku is a game made up of nine 3x3 grids. The goal of the game is to fill a 9x9 board with these numbers in a way that there is a unique number in each row, column, and 3x3 configuration.</li><br>
+		<li>Often times, Sudoku boards have <b>predetermined numbers</b>, having the player find a working solution.</li><br>
+		<li><a href="http://angusj.com/sudoku/hints.php">Hints and Tips While Playing</a></li>
+	</ul>
+</div>
+
+<p class="joketext"><a href="gamegrid.html" class = "playbutton" target="_blank">Play Sudoku</a>(Coming Soon!&#8482;)</p>
+
+<h2> Preliminary Software Design</h2>
+
+<h3>Model</h3>
+
+<h4>Constants</h4>
+<div id="constants">
+	<p><b>SPEED_START</b>: Value for the speed when timer is going. (1).
+	<br><b>SPEED_END</b>: Value for the speed when timer is stopped (0).
+	<br><b>BLANK_VALUE: Updated</b>: Represents the value for a blank square (now the empty string).</p>
+</div>
+
+<h4>Grid: Updated</h4>
+	<ul>
+		<li>Updated: The grid object / model is now just a 2-Dimensional Array.</li>
+		<li>Updated: Includes number objects that know whether they're preDetermined or userInputted.</li>
+		<li>The BLANK_VALUE constant will first initialize all 81 positions.</li>
+		<li>Has properties for:
+			<ol>
+				<li>Time Elapsed.</li>
+				<li>Squares Left.</li>
+				<li>Number of Errors.</li>
+			</ol>
+	</ul>
+
+<h4>Blocks</h4>
+	<ul>
+		<li>A block object represents one of the 9 3x3 blocks on the board.</li>
+		<li>Blocks are temporary objects for one-dimensional arrays for ease of checking a number's block uniqueness.</li>
+		<li>Example from image above: <code>var tmpblock = [1,2,3,6,9,8,7,5,4];</code></li>
+	</ul>
+	
+<h4>Functions</h4>Possible Functions that will come in useful:
+	<p><u><b>New Functions:</b></u></p>
+	<p><b>checkBlock()</b><br>Returns true if the inputted number is unique for that block.</p>
+	<p><b>updateCell()</b><br>Controller takes the model contents for a cell and updates the table cell of the view.</p>
+	<p><u><b>Old Functions:</b></u></p>
+	<p><b>checkProgress()</b><br>Returns true if checkInputtedNumber() succeeds so far for all inputted fields. Blank fields should be fine.</p>
+	<p><b>checkInputtedNumber()</b><br>Returns true if the functions checkRow(), checkColumn(), and checkBlock() all succeed along with input being a number 1-9.</p>
+	<p><b>checkRow()</b><br>Validate that the number is unique to the row.</p>
+	<p><b>checkColumn()</b><br>Validate that the number is unique to the column.</p>
+	<p><b>timer()</b><br>Track time, calls upon timerSpeed for starting and stopping.</p>
+	<p><b>timerSpeed()</b><br>Starts initially on puzzle generation. Stops on completion.</p>
+
+<a href="checkpoint.html" target="_blank">Project Checkpoint</a>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!-- Author: 	Zack Austin
+	 Project:	RESTful Zip Addressing Project for DCG Interview.
+	 Date:		2/12/16-->
+	 
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Addressing Web API</title>
+	<link rel="stylesheet" type="text/css" href="stylize.css">
+	<script src="addresserAPI.js"></script>
+</head>
+
+<body onLoad="JavaScript:checkRefresh();">
+
+<h1>Zip Addressing</h1><p></p>
+
+<h2>Enter a zipcode and we'll give you the city and state it belongs to!<br><br> Alternatively, provide the city and state and we'll return back the zips used in that area.</h2>
+
+
+<div id="zipWrap">
+	<form>
+		Zip Code:<br>
+		<input type="text" id="zipField">
+	</form>
+	
+	<button type="button" id="getCityState" onclick = "addresser.getCityState()">
+		Get City and State
+	</button>
+</div>
+
+<div id="cityStateWrap">
+	<form>
+		City:<br>
+		<input type="text" id="cityField">
+	</form>
+	<p></p><br><p></p>
+	<form>
+		State:<br>
+		<input type="text" id="stateField">
+	</form>
+	
+	<button type="button" id="getZips" onclick = "addresser.getZipCodes()">
+		Get Zip Codes
+	</button>
+</div>
+
+<!-- <div id="cityStateWrap">
+	<form>
+		Zip Code:<br>
+		<input type="text" id="zipField">
+	</form>
+	
+	<button type="button" id="getCityState" onclick = "sudoku.sController.checkPuzzle()">
+		Get Cities and States
+	</button>
+
+</div> -->
+
+<div id = "returnTextWrap">
+	<textarea id="returnText" rows="4" cols="50" readonly>
+	asasd
+	</textarea>
+</div>
+
+</body>
+
+</html>

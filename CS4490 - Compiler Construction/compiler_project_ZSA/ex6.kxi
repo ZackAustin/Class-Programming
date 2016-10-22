@@ -1,0 +1,21 @@
+class cat
+{
+	unprotected int x = 5 + 9 * 4;
+	unprotected int c[] = new int[25];
+	unprotected int w;
+	
+	unprotected int doubleIt(int i)
+	{
+		return i * i;
+	}
+	
+	cat(int i)
+	{
+		w = i;
+	}
+}
+
+void kxi2015 main()
+{
+	
+}

@@ -1,0 +1,19 @@
+This example shows a single event method, rather than separate methods for each event.
+
+Advantages:
+   Fewer methods
+   Easy to add a new event (transition). You don't have to add a new method.
+
+Disadvantages:
+   Have switch statement or if-statements in each State's method.
+
+Use:
+   Probably best in sparse handling of events (i.e., most states handle only one or two events, and ignore the rest.)
+
+
+Teaching:
+   Show how easy it is to add a new event (transition). Add a "Revive" event.
+
+Notes:
+   It might be a bit cleaner to make the Events into classes too.
+

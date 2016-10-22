@@ -1,0 +1,4 @@
+<add name="employee" path="employee" verb="*" modules="IsapiModule"
+http://localhost:8087/RestWebService/employee?id=3550
+
+http://71.195.212.2:8087/RestWebService/zip?code=84045 FINISHED.

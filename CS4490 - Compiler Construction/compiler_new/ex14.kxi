@@ -1,0 +1,49 @@
+
+
+void kxi2015 main()
+{
+	int x = 0;
+	int arraySize = 5;
+	char someChars[] = new char[arraySize];
+	int someInts[] = new int[arraySize + 4];
+	someChars[0] = 'Z';
+	someChars[1] = 'a';
+	someChars[2] = 'c';
+	someChars[3] = 'k';
+	someChars[4] = '!';
+	someChars[5] = '\n';
+	
+	while (x < arraySize + 4)
+	{
+		cout << arraySize + 4 - x;
+		cout << '\n';
+		someInts[x] = arraySize + 4 - x;
+		x = x + 1;
+	}
+	
+	x = 0;
+	
+	while (x < arraySize)
+	{
+		cout << x;
+		cout << ':';
+		cout << ' ';
+		cout << someChars[x];
+		cout << '\n';
+		x = x + 1;
+	}
+	
+	x = 0;
+	
+	while (x <= arraySize + 4)
+	{
+		cout << x;
+		cout << ':';
+		cout << ' ';
+		cout << someInts[x];
+		cout <<  ' ';
+		x = x + 1;
+	}
+	
+	cout << '\n';
+}

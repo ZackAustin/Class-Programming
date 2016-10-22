@@ -1,0 +1,9 @@
+<!DOCTYPE puzzle [
+
+<!ELEMENT puzzle (node)>
+<!ELEMENT node (type, value)+>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT value (#PCDATA)>
+
+<!ATTLIST node ID CDATA #REQUIRED>
+]>

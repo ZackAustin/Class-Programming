@@ -1,0 +1,133 @@
+class dog
+{
+	
+	unprotected void printMe()
+	{
+		catdog d;
+		
+		cout << 'I';
+		cout << '\n';
+		
+		d.printMe();
+	}
+	
+	unprotected void addSelf(int x)
+	{
+		catdog d;
+		cout << 'x';
+		cout << '1';
+		cout << ':';
+		cout << ' ';
+		cout << x;
+		cout << ' ';
+		
+		x = x + x;
+		
+		cout << 'x';
+		cout << '2';
+		cout << ':';
+		cout << ' ';
+		cout << x;
+		cout << '\n';
+		
+		d.doMath(x);
+		
+	}
+}
+
+class catdog
+{
+	unprotected void printMe()
+	{
+		cout << 'C';
+		cout << 'D';
+		cout << '\n';
+	}
+	
+	unprotected void doMath(int w)
+	{
+		catdog z;
+		
+		cout << 'w';
+		cout << '1';
+		cout << ':';
+		cout << ' ';
+		cout << w;
+		cout << ' ';
+		
+		w = w / 2 + 10;
+		
+		cout << 'w';
+		cout << '2';
+		cout << ':';
+		cout << ' ';
+		cout << w;
+		cout << '\n';
+		
+		z.doMathWithMoreParams(w, 5);
+	}
+	
+	unprotected void doMathWithMoreParams(int x, int y)
+	{
+		int z = 0;
+		cout << 'x';
+		cout << ':';
+		cout << ' ';
+		cout << x;
+		cout << ' ';
+		
+		cout << 'y';
+		cout << ':';
+		cout << ' ';
+		cout << y;
+		cout << ' ';
+		
+		cout << 'z';
+		cout << '1';
+		cout << ':';
+		cout << ' ';
+		cout << z;
+		cout << ' ';
+		
+		z = x + y;
+		
+		cout << 'z';
+		cout << '2';
+		cout << ':';
+		cout << ' ';
+		cout << z;
+		cout << '\n';
+	}
+}
+
+
+void kxi2015 main()
+{
+	int x = 44;
+	char w;
+	dog d;
+	
+	cout << x;
+	cout << '\n';
+	
+	d.printMe();
+	
+	cout << 'O';
+	cout << '\n';
+	
+	d.addSelf(x);
+	
+	cout << 'B';
+	cout << 'a';
+	cout << 'c';
+	cout << 'k';
+	cout << ' ';
+	cout << 'S';
+	cout << 'u';
+	cout << 'c';
+	cout << 'c';
+	cout << 'e';
+	cout << 's';
+	cout << 's';
+	cout << '!';
+}

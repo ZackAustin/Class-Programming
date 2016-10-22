@@ -1,0 +1,35 @@
+<!-- Author: 	Zack Austin
+	 Project:	Assignment 4 - Clickable Game Grid
+	 Date:		10/19-->
+	 
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Checkpoint - Sudoku Game</title>
+</head>
+
+<h1><u>Sudoku Checkpoint</u></h1>
+<p><b>Main components:</b>
+	<ul>
+		<li><b>A Timer for the amount of time elapsed on the puzzle:</b>
+			<p>The timer has not been touched at this point, but will appear above the puzzle when a new puzzle is started.</p>
+		</li>
+		<li><b>A button to check the player's progress on the current puzzle:</b>
+			<p>Checking the solution for a puzzle is mostly finished and shown to the player as of now.
+			You can test it by entering numbers and then clicking the check solution button at the bottom of the page.
+			<br>Checking a number's row is finished.
+			<br>Checking a number's column is finished.
+			<br>One thing not finished on checking the solution is seeing if a 3x3 block does not have a duplicate number.
+			Testing for this will require me to setup a block object array to test against. Other than this check, the functionality is finished.</p>
+		</li>
+		<li><b>Updating Cells:</b>
+			<p>All cells are being updated correctly with characters that are appropriate: 1 character with number values 1-9. Done through a keypressup event tied to text fields of certain cells.</p>
+		<li><b>A reset button:</b>
+			<p>It took me a while to solve my own puzzle and realized along the line it would be nice to be able to restart the game to either get a better time
+			or because I was stuck. Also solves the problem of not remembering what puzzle I selected.
+			<br>I'll look toward implementing a reset button by holding a reference to the original 2-dimensional model array.</p>
+		</li>
+	</ul>
+</p>

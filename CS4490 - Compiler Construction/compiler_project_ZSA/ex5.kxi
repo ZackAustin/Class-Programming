@@ -1,0 +1,164 @@
+class cat
+{
+	unprotected cat2 k;
+	unprotected int number;
+	//unprotected int c[] = new int[25];
+	
+	cat(int x, int w)
+	{
+		
+	}
+	
+	unprotected void f(char a)
+	{
+		int x;
+		//cin >> x;
+		//cout << x;
+		//print(a);
+		//c[number] = c[number + 4];
+	}
+	
+	unprotected cat2 f2()
+	{
+		
+	}
+	
+	unprotected void print(char a)
+	{
+		//cout << a;
+	}
+	
+	unprotected int q()
+	{
+		return 5;
+	}
+	
+	unprotected int w(int k, int z)
+	{
+		
+	}
+}
+
+class cat2
+{
+	unprotected cat3 k2;
+	
+	unprotected cat3 g()
+	{
+		
+	}
+}
+
+class cat3
+{
+	unprotected int x;
+	unprotected int y;
+}
+
+class dog
+{
+	unprotected dog2 g;
+	
+	unprotected void g2()
+	{
+		int g;
+		int k;
+		int r;
+		f( r * 3, g < k);
+	}
+	
+	unprotected void f(int x, bool w)
+	{
+		
+	}
+}
+
+class dog2
+{
+	unprotected dog3 g2;
+}
+
+class dog3
+{
+	unprotected int y;
+	unprotected char x;
+}
+
+void kxi2015 main()
+{
+	//int r;
+	//int c[] = new int[25];
+	//c[r + 5] = c[r - 3];
+	int x;
+	int y;
+	int z;
+	int g;
+	int f;
+	int k;
+	cat a;
+	dog b;
+	int r;
+	cat k2 = new cat(7, x);
+	
+	//x = y;
+	//x + y;
+	//x + y * z;
+	//z /x - z;
+	//x<y;
+	//(x < y ) &&(z!= 3);
+	//x = x + y;
+	//x = y * g + f / k;
+	
+	//a.x = b.y;
+	//a.k.x = b.g.y;
+	
+	//a.k.k2.x = b.g.g2.y;
+	
+	//if (x <= y)
+	//{
+	//	if (x != y)
+	//	{
+	//		x = 5;
+	//	}
+		
+	//	while (x < y)
+	//	{
+	//		x = y; //bla1
+	//		x = x + 5; //bla2
+	//		x = x - z; //bla3
+	//	}
+		
+	//	x = y; //bla 1
+	//}
+	//else if(z != 3)
+	//{
+	//	x = y / 1; //bla 2
+	//}
+	//else if (z == 4)
+	//{
+	//	x = y + 1;
+	//	while (z != 3)
+	//	{
+	//		z = z + 1;//bla4
+	//	}
+	//}
+	//r = x + 5 * r; //bla3
+	
+	//cout << x;
+	//cout << (x * 5) + 1;
+	//cin >> x;
+	//cin >> b.g.g2.x;
+	
+	//a.f('\n');
+	//y = a.q();
+	//x = a.number;
+	//a.number = x;
+	//x = a.q();
+	
+	//x = a.w(k, g) + g * r;
+	
+	//r = a.f2().g().y;
+	//a.f2().g().y = r;
+	
+	//c[r+3] = c[r-5];
+}

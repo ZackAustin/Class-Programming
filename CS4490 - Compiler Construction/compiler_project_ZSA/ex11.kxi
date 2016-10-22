@@ -1,0 +1,22 @@
+class syntax
+{
+	unprotected void checkit()
+	{
+		cout << 'i';
+		cout << '1';
+		cout << ' ';
+		spawn checkit() set ii; // yes
+		cout << 'i';
+		cout << '2';
+		block; 
+	}
+}
+
+void kxi2015 main()
+{
+	syntax d;
+	cout << 'S';
+	cout << ':';
+	cout << '\n';
+	d.checkit();
+}

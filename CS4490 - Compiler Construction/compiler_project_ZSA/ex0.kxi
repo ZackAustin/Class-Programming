@@ -1,0 +1,6 @@
+void kxi2015 main()
+{
+	int x = 44;
+	cout << x;
+	x = x + 1 = x + 1;
+}

@@ -1,0 +1,23 @@
+class Cat
+{
+	unprotected char c;
+	unprotected int i;
+	Cat(char a)
+	{
+		c = a;
+		i = 5;
+	}
+}
+
+void kxi2015 main()
+{
+	Cat c = new Cat('a');
+	
+	cout << c.c;
+	cout << '\n';
+	
+	cout << c.i;
+	cout << '\n';
+	
+	cout << 'a';
+}

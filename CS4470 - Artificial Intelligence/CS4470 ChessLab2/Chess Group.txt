@@ -1,0 +1,6 @@
+Team Whatever - Chess Lab 2 Minimax
+
+Zack Austin
+Chris Brewer
+Bryan Christensen
+Dennis Njeru

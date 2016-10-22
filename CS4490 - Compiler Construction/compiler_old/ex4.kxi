@@ -1,0 +1,65 @@
+Lexical Analysis 1 week
+Project 1	           						
+
+A Lexical Analyzer is the first phase of your Compiler.  Using the supplied grammar for our language “kxi” create a lexical analyzer (scanner).  Your scanner should perform the following functions:
+
+1.	Read a source file with the file extension of ".kxi".
+2.	Tokenize the input of the source file by grouping individual characters together to form tokens.
+3.	For each token created output the token type and the lexeme associated with the token.  This is debug code that you should make easy to turn off and on.  
+4.	Discard all comments until the end of a line is reached.
+
+Your lexical analyzer should not look for errors.  However, if an error occurs  which you must deal with create a very readable error message and then skip input until you reach a token you can deal with or the end of the source file.
+
+Test your lexical analyzer on lots of test cases…..
+
+Hints:
+1)	You can use any language to write your Compiler.  
+a)	Pick a language you like to work in you will be using it a lot!  
+b)	The language you pick should support regular expressions (RE) (will be some library).  
+c)	If you pick a language that does not support RE you will have to do more work.  But it is your choice.
+d)	Use RE whenever possible.
+2)	C++ has been an example of a language with poor RE support, it appears to be better in newer versions of C++:
+a)	You can use the following in place of RE.
+i)	Read about the function "strtok", great reference pages on the web.  This function is very helpful as it will break a string into tokens based upon delimiters.  
+ii)	Create a deterministic finite automata (DFA) for the tokens of the kxi language. You learned about these in Introduction to Computational Theory.  
+iii)	Between strtok and a DFA you can build a lexical analyzer.  In the past we never used RE or even strtok, we built the lexical analyzer strictly from the DFA.  Very possible just a little more time consuming. 
+3)	As you read the source file maintain a counter of which line you are reading so it can be included in any error messages.
+4)	Only read a character, a word or at maximum a line of data at a time.  Do not attempt to read the entire file into memory and process it as one big string.  This WILL MAKE YOUR LIFE MORE DIFFICULT and MUCH MORE DIFFICULT TO SOLVE THIS PROBLEM.
+ 
+5)	Consider using the following token types:
+a)	Number
+i)	Kxi only supports integers.
+b)	Character
+i)	No strings in Kxi.
+c)	Identifier
+i)	The grammar does not define what a legal identifier is, however at a minimum you must accept identifiers:
+(1)	 That begin when an Upper or Lower case letter
+(2)	Are less than 80 characters
+d)	Punctuation 
+e)	Keywords or you can use the name of the keyword as the token type ( if, while, true, false, return, …)
+f)	Symbols can be done different ways but consider the following groupings
+i)	Math Operators (+, -, …)
+ii)	Relational Operators (<, >, …)
+iii)	Boolean Operators ( &&, || )
+iv)	Assignment Operator ( = )
+v)	Array begin and end ( [ ] )
+vi)	Block begin and end ( { } )
+vii)	Parentheses open and close. ( ( ) )
+g)	Unknown 
+i)	Use for tokens that don’t appear in kxi.
+h)	EOF or EOT
+i)	EOF can be useful to indicate the end of a file.
+ii)	EOT can be used to indicate the end of tokens.
+6)	A simple interface for your lexical analyzer (scanner) is:
+a)	Token getToken()
+i)	Returns the current token
+b)	void nextToken() 
+i)	Discards the current token, find the next token and makes it the current token.
+c)	If your scanner is Object Oriented, you can pass the file name to the constructor.
+i)	But that is just one possible implementation.
+7)	Note: There is No String primitive in Kxi!!!!
+
+
+You must meet with me within two weeks of the due date of the project.
+
+Don't assume this means you have two extra weeks to do the project if you are no complete are one week "YOU ARE ALREADY BEHIND."

@@ -1,0 +1,74 @@
+class Cat {
+	unprotected int age = 5;
+	protected int
+	weight;
+	unprotected char fullName[];
+	Cat()
+	{
+		char lastNameInit = 'a';
+	}
+	unprotected void run(int x, int y) {
+		int speed;
+		int arr[];
+		int bob[];
+	}
+	protected char firstLetter;
+}
+
+class Class
+{
+	unprotected bool bob;
+	Class (int x, int y)
+	{
+		int tmp = 1;
+		bool bob = true;
+		while (bob)
+		{
+			tmp = tmp + 1;
+			if (tmp >= 10)
+				bob = false;
+		}
+	}
+	protected void john_name(int x, int y, int w)
+	{
+		if (johnhadamerrylittlelamb)
+		{
+			cout << 'f';
+			cout << 'l';
+			cout << 'e';
+			cout << 'e';
+			cout << 'c';
+			cout << 'e';
+		}
+	}
+}
+
+void kxi2015 main()
+{
+		// dogs
+	x X[]; // array of X;
+	
+	bool keepGoing = true;
+	keepGoing = true;
+
+	keepGoing = null;
+	keepGoing = true;
+	keepGoing = true;
+	keepGoing = true;
+	keepGoing = true;keepGoing = true;
+	keepGoing = true;
+	
+
+ 
+	 456 + y + x;
+
+	x = this;
+	x = (y + 5) = this;
+	x = new bool[x+1];
+	y + 5 = atoi(a+b);
+	dogman = itoa('\n' >= 650);
+	
+	x(5 * q, true, dogs, x - 1).r.g(x,y).z[x.y.r];
+	x[erttt<=sdk];
+	
+}

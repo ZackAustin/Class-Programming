@@ -1,0 +1,166 @@
+h1 {
+	text-align: center;
+	padding: 20px;
+}
+
+h2 {
+	text-align: center;
+	padding: 10px;
+}
+
+body {
+	background: repeating-linear-gradient(295deg, Bisque 20%, BlanchedAlmond 40%, white 70%);
+	background: repeating-webkit-linear-gradient(295deg, Bisque 20%, BlanchedAlmond 40%, white 70%);
+}
+
+table.diffBorder, th.diffBorder, td.diffBorder{
+	border: 4px solid gray;
+	margin: auto;
+	z-index: 2;
+	background: white;
+	margin-bottom: 4cm;
+}
+
+table, th, td {
+    border-collapse: collapse;
+   	border-spacing: 0;
+	border: 1px solid black;
+	margin: auto;
+	z-index: 2;
+}
+
+th, td {
+    padding: 0;
+	width: 75px;
+	height: 75px;
+	text-align: center;
+	z-index: 2;
+}
+
+#sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 300px;
+	word-wrap: break-word;
+	background-color: #9999CC;
+}
+
+#savegame {
+	position: absolute;
+	top: 175px;
+	text-align: center;
+    width: 100%;
+}
+
+#loadgame {
+	position: absolute;
+	top: 450px;
+	text-align: center;
+	width: 100%;
+}
+
+#superhero {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 65;
+	z-index: -1;
+}
+
+#shImg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.predetNum {
+	font-weight: bold;
+	font-size: 150%;
+	z-index: 2;
+}
+
+.userNum {
+	color: blue;
+	font-size: 125%;
+	z-index: 2;
+}
+
+.userError {
+	background-color: hsl(0,50%,80%);
+	color: red;
+	z-index: 2;
+}
+
+.boldLeftBorder {
+	border-left: 4px solid black;
+}
+
+.boldBotBorder {
+	border-bottom: 4px solid black;
+}
+
+.numfield {
+	height: 20px;
+	width: 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#usernameStorage {
+	text-align: center;
+	font-size 90%;
+	padding-bottom: 10px;
+}
+
+#storageRemover {
+	text-align: center;
+	position: absolute;
+    margin-left: 200px;
+	margin-top: -30px;
+	border: 3px solid gray;
+	font-size: 70%;
+}
+#storageRemoverWrapper {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#lastModifiedCell {
+	text-align: center;
+	font-size: 90%;
+	padding-bottom: 20px;
+}
+
+#buttonwrap {
+	text-align: center;
+}
+
+#checkSolBorder {
+	display: table;
+	margin: 0 auto;
+    border: 3px solid gray;
+	text-align: center;
+	background: white;
+}
+
+#newPuzzles {
+	text-align: center;
+}
+
+#wrapDifficulty {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+#newPuzzleButton {
+	margin-top: 5px;
+	border: 3px solid gray;
+}
+
+#timerWrap {
+	text-align: center;
+}

@@ -1,0 +1,114 @@
+
+class Cat {
+      unprotected Syntax catSyntax;
+}
+
+class DemoC 
+{
+    DemoC() {}
+
+    unprotected int fib(int k) 
+	{
+		if (k == 0) return k;
+		else if (k == 1) return 1;
+		else return (fib(k - 1) + fib(k - 2));
+    }
+}
+
+class Syntax
+{
+	unprotected int i;
+    protected char c;
+	unprotected bool b;
+
+    Syntax(int j, char d)
+	{
+		//i = j;
+		//c = d;
+	}
+
+	unprotected void checkit()
+	{
+	char cc[] = new char[1000];
+	int  ii[] = new int[512];
+	Syntax ss[] = new Syntax[256];
+
+	 cc[1] = cc[2]; // yes  
+	 cc[100] = '5';
+	 cc[10] = c;     // yes
+	 
+	 ii = ii; 
+	// i = 5 + i;
+	// ii[5000] = 5 + i; // yes
+	// i = ii[0];  // yes
+
+	 ss[0] = new Syntax(7, 'c');
+	// ss[i] = ss[i+1]; // yes
+	// ss[i+7/3] = new Syntax(i, c); // yes
+
+	 spawn checkit() set ii; // yes
+	 block; 
+    } 
+
+    unprotected int which(int i)
+	{
+		i = i * i;
+		return i;
+    }
+}
+
+
+void kxi2015 main() {
+    int k;
+    int j;
+    int sum;
+    int two = 2;
+    DemoC dc;
+
+    //dc = new DemoC();
+    cout << '>';
+    cin >> j;
+    cout << '\n';
+
+    while (k != 0)
+	{
+		if (k != 0)
+		{
+			k = 5 * -1 - two;
+			sum = 0;
+			while (true)
+			{		
+				j = k;
+				while (j > 0)
+				{
+					if ((j / 3) == 0)
+						sum = (sum + j);
+					j = (j - 1);
+				}
+				k = (k - 1);
+			}
+
+	    cout << sum;
+	    cout << '\n';
+		}
+		else
+		{
+			j = 1;
+			sum = 0;
+			while(j < k * 100)
+			{
+				sum = sum + (j + sum)/(sum - j);
+				if (sum == 200 || sum == 300)
+					sum = sum + two;
+				j = (j + 1);
+			}
+			cout << sum;
+			cout << '\n';
+		}
+
+	cout << '>';
+	cin >> k;
+	cout << '\n';    
+    }
+}
+

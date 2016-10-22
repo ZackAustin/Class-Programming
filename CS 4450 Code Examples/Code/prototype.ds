@@ -1,0 +1,66 @@
+x = {
+    data : [],
+    hasMore : function () {
+       return this.data.length !== 0;
+   },
+    push : function (a) {
+        this.data.push(a);
+    },
+    pop : function () {
+       return this.data.pop();
+    }
+};
+  
+// Make x y's prototype
+var F = function () {}  // Empty constructor
+F.prototype = x;
+y = new F();
+//y.remove = undefined;
+inspect("y", y);
+println(y.hasMore());
+y.push(1);
+println(y.hasMore());
+println(y.pop());
+println(y.hasMore());
+y.push(2);
+inspect("y", y);
+y.pop = null;
+//y.pop();
+inspect("y", y);
+inspect("x", x);
+
+function inspect(oname, obj) {
+    println("=== Inspect: " + oname + " ===");
+    var name;
+    for (name in obj) {
+        print(name + ": ");
+        var it = obj[name];
+        if (it && it !== null) {
+            if (typeof it != "function") {
+                if (typeof it == "object" && it.constructor === Array) {
+                    printArray(it);
+                }
+                else {
+                    print(it);
+                }
+            }
+            if (!obj.hasOwnProperty(name)) {
+                print(" (inherited)");
+            }
+        }
+        else {
+            print("missing");
+        }
+        println();
+    }
+    println("===");
+};
+
+function printArray(a) {
+    print("[ ");
+    var i;
+    for (i = 0; i < a.length; ++i) {
+        print(a[i] + " ");
+    }
+    print("]");
+}

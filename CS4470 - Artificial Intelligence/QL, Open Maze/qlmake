@@ -1,0 +1,3 @@
+/EHsc
+main.cpp
+/link /out:maze.exe

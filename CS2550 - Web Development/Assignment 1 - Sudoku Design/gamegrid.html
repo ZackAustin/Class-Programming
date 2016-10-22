@@ -1,0 +1,140 @@
+<!-- Author: 	Zack Austin
+	 Project:	Assignment 1 - Game Grid
+	 Date:		9/8-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Sudoku Game</title>
+	<link rel="stylesheet" href="gamegrid.css">
+</head>
+
+<body>
+
+<h1>Sudoku Superheroes</h1>
+
+<table>
+		<tr>
+			<td class="predetNum">9</td>
+			<td class="predetNum">1</td>
+			<td class="userNum">8</td>
+			<td class="predetNum boldLeftBorder">7</td>
+			<td></td>
+			<td></td>
+			<td class="boldLeftBorder"></td>
+			<td class="userNum">3</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="predetNum">3</td>
+			<td class="predetNum">2</td>
+			<td class="predetNum boldLeftBorder">6</td>
+			<td></td>
+			<td class="predetNum">9</td>
+			<td class="boldLeftBorder"></td>
+			<td class="predetNum">8</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="boldBotBorder"></td>
+			<td class="boldBotBorder"></td>
+			<td class="predetNum boldBotBorder">7</td>
+			<td class="boldBotBorder boldLeftBorder"></td>
+			<td class="predetNum boldBotBorder">8</td>
+			<td class="boldBotBorder"></td>
+			<td class="predetNum boldBotBorder boldLeftBorder">9</td>
+			<td class="userNum boldBotBorder">1</td>
+			<td class="boldBotBorder"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="predetNum">8</td>
+			<td class="predetNum">6</td>
+			<td class="boldLeftBorder"></td>
+			<td class="predetNum">3</td>
+			<td></td>
+			<td class="predetNum boldLeftBorder">1</td>
+			<td class="predetNum">7</td>
+			<td class="userNum">9</td>
+		</tr>
+		<tr>
+			<td class="predetNum">3</td>
+			<td></td>
+			<td></td>
+			<td class="boldLeftBorder"></td>
+			<td></td>
+			<td class="userNum userError">1</td>
+			<td class="boldLeftBorder"></td>
+			<td></td>
+			<td class="predetNum">6</td>
+		</tr>
+		<tr>
+			<td class="boldBotBorder"></td>
+			<td class="predetNum boldBotBorder">5</td>
+			<td class="predetNum boldBotBorder">1</td>
+			<td class="boldBotBorder boldLeftBorder"></td>
+			<td class="predetNum boldBotBorder">2</td>
+			<td class="userNum boldBotBorder">6</td>
+			<td class="predetNum boldBotBorder boldLeftBorder">8</td>
+			<td class="predetNum boldBotBorder">4</td>
+			<td class="userNum boldBotBorder">3</td>
+		</tr>
+		<tr>
+			<td class="userNum">1</td>
+			<td></td>
+			<td class="predetNum">9</td>
+			<td class="boldLeftBorder"></td>
+			<td class="predetNum">5</td>
+			<td></td>
+			<td class="predetNum boldLeftBorder">3</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="predetNum">2</td>
+			<td></td>
+			<td class="predetNum boldLeftBorder">3</td>
+			<td></td>
+			<td class="predetNum">1</td>
+			<td class="predetNum boldLeftBorder">4</td>
+			<td class="predetNum">9</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="boldLeftBorder"></td>
+			<td></td>
+			<td class="predetNum">2</td>
+			<td class="boldLeftBorder"></td>
+			<td class="predetNum">6</td>
+			<td class="predetNum">1</td>
+		</tr>
+</table>
+
+<br>
+<div id="checkSolBorder">
+	Check Solution
+</div>
+
+<div id="newPuzzles">
+<p><i>Errors Found.</i></p>
+	<p>New Puzzle:<br></p>
+</div>
+
+<table class="diffBorder">
+	<tr>
+		<td>Easy</td>
+		<td>Medium</td>
+		<td>Hard</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

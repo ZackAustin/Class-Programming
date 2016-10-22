@@ -1,0 +1,23 @@
+10 12
+~~~~....MMMM
+~~~....MMMM.
+~~...MMMMMMM
+~~~.MMMM*MMM
+~~~..MMMMMMM
+~~...fMMMMMM
+~~.ffffMMMMM
+~~..ffffff..
+~~~~fffffff.
+~~~~~~~fffff
+60 60
+map1items.txt
+.;plains;plain.png;
+M;mountain;mountain.png;
+f;forest;forest.png;
+~;water;water.png;
+*;goal;treasure.png;
+-;out;out.png;
+1;person;person.png;
+
+
+
