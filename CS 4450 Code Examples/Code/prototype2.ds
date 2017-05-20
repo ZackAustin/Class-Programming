@@ -1,27 +1,0 @@
-x = {
-    data : [],
-    hasMore : function () {
-       return this.data.length !== 0;
-   },
-    push : function (a) {
-        this.data.push(a);
-    },
-    pop : function () {
-       return this.data.pop();
-    }
-};
-  
-// Make x y's prototype
-var F = function () {}  // Empty constructor
-F.prototype = x;
-y = new F();
-
-// Add a top method
-y.top = function () {
-    return this.data[this.data.length-1];
-}
-
-y.push(1);
-println(y.top())	// 1
-y.push(2);
-println(y.top())	// 2

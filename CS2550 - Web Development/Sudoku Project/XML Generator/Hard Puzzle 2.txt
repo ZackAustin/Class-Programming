@@ -1,9 +1,0 @@
-b  	5 	4 	b  	b  	b  	b  	b  	b 
-b  	b  	6 	b  	3 	b  	b  	b  	b 
-8 	b  	3 	2 	b  	b  	b  	b  	b 
-b  	8 	b  	b  	b  	4 	b  	9 	7
-4 	b  	b  	8 	b  	2 	b  	b  	5
-7 	3 	b  	6 	b 	b  	b  	1 	b 
-b  	b  	b  	b  	b  	1 	8 	b  	9
-b  	b  	b  	b  	9 	b  	7 	b  	b 
-b  	b  	b  	b  	b  	b  	6 	4 	b 

@@ -1,4 +1,0 @@
-/EHsc
-GenerateXMLPuzzles.cpp
-XMLGenerator.cpp
-/link /out:xmlgen.exe

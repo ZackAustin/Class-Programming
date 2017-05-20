@@ -1,3 +1,0 @@
-0;2;a tasty squirrel
-0;3;Old Tattered Notebook;
-2;5; a bag of coins;

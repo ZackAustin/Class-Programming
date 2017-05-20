@@ -1,8 +1,0 @@
-1. Write REF ICode Statement
-    - Essentially it adds a base address to an offset and stores that inside a temporary.
-2. Write get / store data for used as ref heap statements.
-    - They are public instance variables, accessed from the reference object + a displacement
-    to the instance variable.
-    - This is stored in the temporary. The temporary says it's used as a ref. So we use it as the address
-    to the instance variable.
-3. Ready for arrays? If so, same concept.

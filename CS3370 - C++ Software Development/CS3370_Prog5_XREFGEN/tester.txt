@@ -1,6 +1,0 @@
-Strings
-
-
-Like many of the generation of "seasoned" programmers, my career in coding began with 
-number crunching. Most of the time my FORTRAN programs just emitted numbers 
-accompanied by terse labels.

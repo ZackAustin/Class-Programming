@@ -1,5 +1,0 @@
-/EHsc
-genetics.cpp
-population.cpp
-geneticAlgs.cpp
-/link /out:genetics.exe
